@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const messageApi = useMessage()
+import { message as messageApi } from 'ant-design-vue'
 
 const handleClick = () => {
   messageApi.success('Hello, world!')
@@ -9,8 +9,8 @@ const handleClick = () => {
 <template>
   <main class="mx-auto h-screen max-w-2xl fc flex-col gap-4">
     <h1>It works</h1>
-    <n-button @click="handleClick">
+    <a-button @click="handleClick">
       Click me
-    </n-button>
+    </a-button>
   </main>
 </template>

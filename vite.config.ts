@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import VueJsx from '@vitejs/plugin-vue-jsx'
 import Components from 'unplugin-vue-components/vite'
-import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
+import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
 import UnoCSS from 'unocss/vite'
 import VueRouter from 'unplugin-vue-router/vite'
@@ -34,16 +34,7 @@ export default defineConfig({
         'pinia',
         VueRouterAutoImports,
         {
-          // add any other imports you were relying on
           'vue-router/auto': ['useLink'],
-        },
-        {
-          'naive-ui': [
-            'useDialog',
-            'useMessage',
-            'useNotification',
-            'useLoadingBar',
-          ],
         },
       ],
       dts: true,
@@ -57,7 +48,9 @@ export default defineConfig({
     Components({
       dts: true,
       resolvers: [
-        NaiveUiResolver(),
+        AntDesignVueResolver({
+          importStyle: false,
+        }),
       ],
     }),
 

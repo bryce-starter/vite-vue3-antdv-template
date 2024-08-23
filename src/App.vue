@@ -1,28 +1,14 @@
 <script lang="ts" setup>
-import type { GlobalThemeOverrides } from 'naive-ui'
-
-/**
- * https://uicolors.app/create
- */
-const themeOverrides: GlobalThemeOverrides = {
-  common: {
-    primaryColor: '#374EFC',
-    primaryColorHover: '#4f71ff',
-    primaryColorPressed: '#2336df',
-    primaryColorSuppl: '#374EFC',
-    borderRadius: '0.5rem',
-  },
-}
 </script>
 
 <template>
-  <n-config-provider
-    abstract
-    preflight-style-disabled
-    :theme-overrides="themeOverrides"
+  <a-config-provider
+    :theme="{
+      token: {
+        colorPrimary: '#00b96b',
+      },
+    }"
   >
-    <n-message-provider>
-      <RouterView />
-    </n-message-provider>
-  </n-config-provider>
+    <RouterView />
+  </a-config-provider>
 </template>
