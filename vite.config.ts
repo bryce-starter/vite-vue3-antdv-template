@@ -58,12 +58,7 @@ export default defineConfig({
     // see uno.config.ts for config
     UnoCSS(),
 
-    Vue({
-      script: {
-        propsDestructure: true,
-        defineModel: true,
-      },
-    }),
+    Vue(),
 
     VueJsx(),
   ],
