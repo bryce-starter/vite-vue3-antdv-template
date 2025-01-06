@@ -1,13 +1,13 @@
 import path from 'node:path'
-import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import VueJsx from '@vitejs/plugin-vue-jsx'
-import Components from 'unplugin-vue-components/vite'
-import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
-import AutoImport from 'unplugin-auto-import/vite'
 import UnoCSS from 'unocss/vite'
-import VueRouter from 'unplugin-vue-router/vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
+import Components from 'unplugin-vue-components/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
+import VueRouter from 'unplugin-vue-router/vite'
+import { defineConfig } from 'vite'
 import Layouts from 'vite-plugin-vue-layouts'
 
 export default defineConfig({

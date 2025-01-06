@@ -1,2 +1,2 @@
-export { setupRouter } from './router'
 export { setupPinia } from './pinia'
+export { setupRouter } from './router'

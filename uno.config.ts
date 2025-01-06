@@ -1,17 +1,17 @@
 import {
-  defineConfig,
-  presetUno,
-  transformerDirectives,
-  transformerVariantGroup,
-} from 'unocss'
-import {
-  WHAutoComplete,
   presetEllipsis,
   presetIcon,
   presetSafearea,
   presetShortcuts,
   transformerWh,
+  WHAutoComplete,
 } from '@bryce-loskie/unocss-preset-mini'
+import {
+  defineConfig,
+  presetUno,
+  transformerDirectives,
+  transformerVariantGroup,
+} from 'unocss'
 
 export default defineConfig({
   content: {
