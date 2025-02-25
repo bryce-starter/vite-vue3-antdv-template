@@ -1,17 +1,5 @@
-import {
-  presetEllipsis,
-  presetIcon,
-  presetSafearea,
-  presetShortcuts,
-  transformerWh,
-  WHAutoComplete,
-} from '@bryce-loskie/unocss-preset-mini'
-import {
-  defineConfig,
-  presetUno,
-  transformerDirectives,
-  transformerVariantGroup,
-} from 'unocss'
+import { presetWeb } from '@bryce-loskie/unocss-preset-mini'
+import { defineConfig } from 'unocss'
 
 export default defineConfig({
   content: {
@@ -28,21 +16,7 @@ export default defineConfig({
       dim: '#eaeaea',
     },
   },
-  autocomplete: {
-    templates: [
-      WHAutoComplete,
-    ],
-  },
-  transformers: [
-    transformerDirectives(),
-    transformerVariantGroup(),
-    transformerWh,
-  ],
   presets: [
-    presetEllipsis,
-    presetSafearea,
-    presetShortcuts,
-    presetUno(),
-    presetIcon(),
+    presetWeb(),
   ],
 })
