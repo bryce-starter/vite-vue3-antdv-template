@@ -1,4 +1,4 @@
-import { presetWeb } from '@bryce-loskie/unocss-preset-mini'
+import { presetWeb } from '@bryce-loskie/unocss-preset'
 import { defineConfig } from 'unocss'
 
 export default defineConfig({
